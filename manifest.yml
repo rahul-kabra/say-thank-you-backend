@@ -1,0 +1,10 @@
+---
+version: 1
+applications:
+  - name: SayThankYou
+    path: target\say-thank-you-backend.jar
+    memory: 1G
+    buildpacks:
+    - java_buildpack
+    services:
+    - mysqldb
